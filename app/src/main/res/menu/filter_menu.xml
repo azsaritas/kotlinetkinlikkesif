@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/filter_music"
+        android:title="Müzik" />
+    <item
+        android:id="@+id/filter_theater"
+        android:title="Tiyatro" />
+    <item
+        android:id="@+id/seminer_filtresi"
+        android:title="Seminer"/>
+    <item
+        android:id="@+id/egitim_filtresi"
+        android:title="Eğitim"/>
+    <item
+        android:id="@+id/gezi_filtresi"
+        android:title="Gezi"/>
+    <item
+        android:id="@+id/is_filtresi"
+        android:title="İş"/>
+
+    <item
+        android:id="@+id/filter_all"
+        android:title="Tüm Etkinlikler" />
+</menu>

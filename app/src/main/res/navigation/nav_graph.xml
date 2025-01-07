@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/girisFragment">
+
+    <fragment
+        android:id="@+id/girisFragment"
+        android:name="com.azi.etkinlikkesifkotlin1.GirisFragment"
+        android:label="fragment_giris"
+        tools:layout="@layout/fragment_giris" >
+        <action
+            android:id="@+id/action_girisFragment_to_kayitFragment"
+            app:destination="@id/kayitFragment" />
+        <action
+            android:id="@+id/action_girisFragment_to_etkinlikFragment"
+            app:destination="@id/etkinlikFragment" />
+        <action
+            android:id="@+id/action_girisFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kayitFragment"
+        android:name="com.azi.etkinlikkesifkotlin1.KayitFragment"
+        android:label="fragment_kayit"
+        tools:layout="@layout/fragment_kayit" >
+        <action
+            android:id="@+id/action_kayitFragment_to_girisFragment"
+            app:destination="@id/girisFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/etkinlikFragment"
+        android:name="com.azi.etkinlikkesifkotlin1.EtkinlikFragment"
+        android:label="fragment_etkinlik"
+        tools:layout="@layout/fragment_etkinlik" >
+        <action
+            android:id="@+id/action_etkinlikFragment_to_eventDetailFragment"
+            app:destination="@id/eventDetailFragment" />
+        <action
+            android:id="@+id/action_etkinlikFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_etkinlikFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventDetailFragment"
+        android:name="com.azi.etkinlikkesifkotlin1.EventDetailFragment"
+        android:label="EventDetailFragment" >
+
+        <action
+            android:id="@+id/action_eventDetailFragment_to_etkinlikFragment"
+            app:destination="@id/etkinlikFragment" />
+        <action
+            android:id="@+id/action_eventDetailFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_eventDetailFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.azi.etkinlikkesifkotlin1.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" >
+        <action
+            android:id="@+id/action_mapFragment_to_etkinlikFragment"
+            app:destination="@id/etkinlikFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_eventDetailFragment"
+            app:destination="@id/eventDetailFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.azi.etkinlikkesifkotlin1.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_eventDetailFragment"
+            app:destination="@id/eventDetailFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_etkinlikFragment"
+            app:destination="@id/etkinlikFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_girisFragment"
+            app:destination="@id/girisFragment" />
+    </fragment>
+</navigation>
