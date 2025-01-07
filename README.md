@@ -4,6 +4,6 @@ Yerel Etkinlik Keşif Uygulaması
 
 Kullanılan Dil: Kotlin
 
-Platform: Andorid Studio
+Platform: Android Studio
 
 Etkinlik API: Eventbrite API
