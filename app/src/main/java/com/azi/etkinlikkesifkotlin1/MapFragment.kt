@@ -118,7 +118,7 @@ class MapFragment : Fragment(), OnMapReadyCallback {
         private fun getDirectionUrl(origin: LatLng, dest: LatLng): String {
             val originParam = "origin=${origin.latitude},${origin.longitude}"
             val destParam = "destination=${dest.latitude},${dest.longitude}"
-            val keyParam = "key=AIzaSyDouC17OoLPotp2rAIvF-ejKPmkMr085nY" // Replace with your actual Google Directions API key
+            val keyParam = "key=" // Replace with your actual Google Directions API key
             return "https://maps.googleapis.com/maps/api/directions/json?$originParam&$destParam&$keyParam"
         }
 
